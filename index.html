@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen iFrame</title>
+    <style>
+        html, body {
+            height: 100%;  /* Ensure html and body take up the full viewport height */
+            margin: 0;    /* Remove default margins */
+            padding: 0;   /* Remove default padding */
+            overflow: hidden; /* Prevent scrollbars on the outer page */
+        }
+
+        iframe {
+            width: 100%;  /* Full viewport width */
+            height: 100%; /* Full viewport height */
+            border: none; /* Remove iframe border */
+            display: block; /* Important for removing potential extra space below the iframe */
+        }
+    </style>
+</head>
+<body>
+    <iframe src="https://jaouadart-dict.static.hf.space" frameborder="0"></iframe>
+</body>
+</html>
